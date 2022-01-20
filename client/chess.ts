@@ -301,14 +301,14 @@ export const VARIANTS: { [name: string]: Variant } = {
             chess960: true, icon: "♔", icon960: "♔",
         }),
             
-    threecheck: new Variant({
-            name: "threecheck", tooltip: () => _("Keep Threechecks."),
-            startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1 +0+0",
-            board: "standard8x8", piece: "standard",
-            pieceRoles: ["k", "q", "r", "b", "n", "p"],
-            enPassant: true,
-            icon: "♟",
-          }),
+  //  threecheck: new Variant({
+  //          name: "threecheck", tooltip: () => _("Keep Threechecks."),
+  //          startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1 +0+0",
+  //          board: "standard8x8", piece: "standard",
+  //          pieceRoles: ["k", "q", "r", "b", "n", "p"],
+  //          enPassant: true,
+  //          icon: "♟",
+  //        }),
           
     antichess: new Variant({
       name: "antichess", tooltip: () => _("capture all pieces."),
@@ -327,6 +327,15 @@ export const VARIANTS: { [name: string]: Variant } = {
       enPassant: true,
       icon: "♔",
     }),
+    
+    atomar: new Variant({
+      name: "atomic", tooltip: () => _("Pieces explode upon capture."),
+      startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      board: "standard8x8", piece: "standard",
+      pieceRoles: ["k", "q", "r", "b", "n", "p"],
+      enPassant: true,
+      pieceSound: "atomic",
+      chess960: true, icon: "~", icon960: "\\",
 
     makruk: new Variant({
         name: "makruk", tooltip: () => _("Thai Chess. A game closely resembling the original Chaturanga. Similar to Chess but with a different queen and bishop."),
@@ -761,7 +770,7 @@ const disabledVariants = [ "gothic", "gothhouse", "embassy" ];
 export const enabledVariants = variants.filter(v => !disabledVariants.includes(v));
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "atomic"] },
+    standard: { variants: [ "atomic", "atomar"] },
     //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     //shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi" ] },
     //xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "minixiangqi" ] },
