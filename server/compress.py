@@ -16,7 +16,7 @@ V2C = {
     "atomic": "A",
     "kingofthehill": "L",
     "racingkings": "F",
-    "antichess": "f",
+    "antiatomic": "f",
     "losers": "H",
     "threecheck": "V",
     "makruk": "m",

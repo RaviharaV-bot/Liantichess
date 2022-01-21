@@ -44,7 +44,9 @@ CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC
 
 VARIANTS = (
     "atomic",
-    "atomic960"
+    "atomic960",
+    "antiatomic",
+    "antiatomic960"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
     # "gothic",
@@ -67,8 +69,8 @@ VARIANT_ICONS = {
     "placement": "S",
     "kingofthehill": "🏳️",
     "racingkings": "♔",
-    "antichess": "♔",
-    "antichess960": "♔",
+    "antiatomic": "♔",
+    "antiatomic960": "♔",
     "losers": "♔",
     "losers960": "♔",
     "threecheck": "♟",
@@ -114,7 +116,7 @@ VARIANT_960_TO_PGN = {
     "capahouse": "Capahouse960",
     "crazyhouse": "Crazyhouse",  # to let lichess import work
     "atomic": "Atomic",          # to let lichess import work
-    "antichess": "Antichess",          # to let lichess import work    
+    "antiatomic": "Antiatomic960",          # to let lichess import work    
     "losers": "Losers960",
     "seirawan": "Seirawan960",
     # some early game is accidentally saved as 960 in mongodb
