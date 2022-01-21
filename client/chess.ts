@@ -310,12 +310,13 @@ export const VARIANTS: { [name: string]: Variant } = {
           }),
           
     antiatomic: new Variant({
-      name: "antiatomic", tooltip: () => _("capture all pieces."),
-      startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      board: "standard8x8", piece: "standard",
-      pieceRoles: ["k", "q", "r", "b", "n", "p"],
-      enPassant: true,
-      chess960: true, icon: "♔", icon960: "♔",
+        name: "antiatomic", tooltip: () => _("Atomic + Antichess"),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceRoles: ["k", "q", "r", "b", "n", "p"],
+        enPassant: true,
+        pieceSound: "atomic",
+        chess960: true, icon: "~", icon960: "\\",
     }),
     
     racingkings: new Variant({
