@@ -5,8 +5,9 @@ startFen = r8r/1nbqkcabn1/pppppppppp/10/10/10/10/PPPPPPPPPP/1NBQKCABN1/R8R[] w -
 pieceDrops = true
 capturesToHand = true
 
-[antiatomic]
+[anti_atomic:giveaway]
 startFen = rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+blastOnCapture = true
 mustCapture = true
 
 # Hybrid variant of Gothic-chess and crazyhouse, using Capablanca as a template

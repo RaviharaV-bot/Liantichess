@@ -309,13 +309,14 @@ export const VARIANTS: { [name: string]: Variant } = {
             icon: "♟",
           }),
           
-    antiatomic: new Variant({
-      name: "antiatomic", tooltip: () => _("capture all pieces."),
-      startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      board: "standard8x8", piece: "standard",
-      pieceRoles: ["k", "q", "r", "b", "n", "p"],
-      enPassant: true,
-      chess960: true, icon: "♔", icon960: "♔",
+
+    anti_atomic: new Variant({   
+        name: "anti_atomic", tooltip: () => _("Atomic+Antichess"),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        board: "standard8x8", piece: "standard",
+        pieceRoles: ["k", "q", "r", "b", "n", "p"],
+        enPassant: true,
+        chess960: true, icon: "♔", icon960: "♔",
     }),
     
     racingkings: new Variant({
@@ -324,7 +325,7 @@ export const VARIANTS: { [name: string]: Variant } = {
       board: "standard8x8", piece: "standard",
       pieceRoles: ["k", "q", "r", "b", "n", "p"],
       enPassant: true,
-      icon: "♔",
+      chess960: true, icon: "~", icon960: "\\",
     }),
 
     makruk: new Variant({
@@ -760,7 +761,7 @@ const disabledVariants = [ "gothic", "gothhouse", "embassy" ];
 export const enabledVariants = variants.filter(v => !disabledVariants.includes(v));
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "atomic"] },
+    standard: { variants: [ "atomic", "anti_atomic"] },
     //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     //shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi" ] },
     //xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "minixiangqi" ] },
