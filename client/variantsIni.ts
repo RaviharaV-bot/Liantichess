@@ -7,6 +7,7 @@ capturesToHand = true
 
 [antiatomic]
 startFen = rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+blastOnCapture = true
 mustCapture = true
 
 # Hybrid variant of Gothic-chess and crazyhouse, using Capablanca as a template
