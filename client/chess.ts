@@ -309,8 +309,9 @@ export const VARIANTS: { [name: string]: Variant } = {
             icon: "♟",
           }),
           
-    antiatomic: new Variant({
-        name: "antiatomic", tooltip: () => _("Atomic + Antichess"),
+
+    antiatomic: new Variant({   
+        name: "antiatomic", tooltip: () => _("Atomic+Antichess"),
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
         board: "standard8x8", piece: "standard",
         pieceRoles: ["k", "q", "r", "b", "n", "p"],
@@ -325,7 +326,7 @@ export const VARIANTS: { [name: string]: Variant } = {
       board: "standard8x8", piece: "standard",
       pieceRoles: ["k", "q", "r", "b", "n", "p"],
       enPassant: true,
-      icon: "♔",
+      chess960: true, icon: "~", icon960: "\\",
     }),
 
     makruk: new Variant({
