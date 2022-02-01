@@ -20,7 +20,7 @@ V2C = {
     "losers": "H",
     "threecheck": "V",
     "makruk": "m",
-    "placement": "p",
+    "atomickoth": "p",
     "seirawan": "s",
     "shogi": "g",
     "minishogi": "a",
