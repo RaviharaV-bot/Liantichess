@@ -263,14 +263,14 @@ export const VARIANTS: { [name: string]: Variant } = {
         chess960: true, icon: "+", icon960: "%",
     }),
 
-    placement: new Variant({
-        name: "placement", tooltip: () => _("Choose where your pieces start."),
-        startFen: "8/pppppppp/8/8/8/8/PPPPPPPP/8[KQRRBBNNkqrrbbnn] w - - 0 1",
+    atomickoth: new Variant({
+        name: "atomickoth", tooltip: () => _("Atomic+koth"),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
         board: "standard8x8", piece: "standard",
         pieceRoles: ["k", "q", "r", "b", "n", "p"],
-        pocketRoles: ["n", "b", "r", "q", "k"],
         enPassant: true,
-        icon: "S",
+        pieceSound: "atomic",
+        chess960: true, icon: "~", icon960: "\\",
     }),
 
     atomic: new Variant({
@@ -762,7 +762,7 @@ export const enabledVariants = variants.filter(v => !disabledVariants.includes(v
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
 
-    standard: { variants: [ "atomic", "antiatomic"] },
+    standard: { variants: [ "atomic", "antiatomic", "atomickoth"] },
     //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     //shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi" ] },
     //xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "minixiangqi" ] },
