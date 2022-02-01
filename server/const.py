@@ -68,7 +68,8 @@ VARIANT_ICONS = {
     "xiangqi": "|",
     "chess": "M",
     "crazyhouse": "+",
-    "atomickoth": "🏳️~",
+    "atomickoth": "~",
+    "atomickoth960": "\\",
     "kingofthehill": "🏳️",
     "racingkings": "♔",
     "antiatomic": "♔",
@@ -118,6 +119,7 @@ VARIANT_960_TO_PGN = {
     "capahouse": "Capahouse960",
     "crazyhouse": "Crazyhouse",  # to let lichess import work
     "atomic": "Atomic",          # to let lichess import work
+    "atomickoth": "Atomickoth960",
     "antiatomic": "Antiatomic960",          # to let lichess import work    
     "losers": "Losers960",
     "seirawan": "Seirawan960",
@@ -125,12 +127,11 @@ VARIANT_960_TO_PGN = {
     "shogi": "Shogi",
     "sittuyin": "Sittuyin",
     "makruk": "Makruk",
-    "atomickoth": "AtomicKoth960",
     "grand": "Grand",
 }
 
 CATEGORIES = {
-    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "atomickoth", "atomic", "atomic960", "antiatomic", "antiatomic"),
+    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "atomickoth", "atomic", "atomic960", "antiatomic"),
     "fairy": ("capablanca", "capablanca960", "capahouse", "capahouse960", "seirawan", "seirawan960", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel"),
     "army": ("synochess", "shinobi", "empire", "chak"),
     "makruk": ("makruk", "makpong", "cambodian", "sittuyin", "asean"),
