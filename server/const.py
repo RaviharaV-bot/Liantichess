@@ -125,7 +125,7 @@ VARIANT_960_TO_PGN = {
     "shogi": "Shogi",
     "sittuyin": "Sittuyin",
     "makruk": "Makruk",
-    "atomickoth": "AtomicKoth",
+    "atomickoth": "AtomicKoth960",
     "grand": "Grand",
 }
 
