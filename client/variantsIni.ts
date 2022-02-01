@@ -5,4 +5,5 @@ blastOnCapture = true
 
 # Hybrid variant of antichess and king of the hill
 [atomickoth:kingofthehill]
-blastOnCapture = true`
+blastOnCapture = true
+mustCapture = false`
