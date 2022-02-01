@@ -125,12 +125,12 @@ VARIANT_960_TO_PGN = {
     "shogi": "Shogi",
     "sittuyin": "Sittuyin",
     "makruk": "Makruk",
-    "placement": "Placement",
+    "atomickoth": "AtomicKoth",
     "grand": "Grand",
 }
 
 CATEGORIES = {
-    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "placement", "atomic", "atomic960", "antiatomic", "antiatomic"),
+    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "atomickoth", "atomic", "atomic960", "antiatomic", "antiatomic"),
     "fairy": ("capablanca", "capablanca960", "capahouse", "capahouse960", "seirawan", "seirawan960", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel"),
     "army": ("synochess", "shinobi", "empire", "chak"),
     "makruk": ("makruk", "makpong", "cambodian", "sittuyin", "asean"),
