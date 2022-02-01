@@ -47,6 +47,8 @@ VARIANTS = (
     "atomic960",
     "antiatomic",
     "antiatomic960"
+    "atomickoth"
+    "atomickoth960"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
     # "gothic",
@@ -66,7 +68,7 @@ VARIANT_ICONS = {
     "xiangqi": "|",
     "chess": "M",
     "crazyhouse": "+",
-    "placement": "S",
+    "atomickoth": "🏳️~",
     "kingofthehill": "🏳️",
     "racingkings": "♔",
     "antiatomic": "♔",
