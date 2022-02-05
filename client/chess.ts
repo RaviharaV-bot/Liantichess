@@ -365,8 +365,8 @@ export const VARIANTS: { [name: string]: Variant } = {
         chess960: true, icon: "♔", icon960: "♔",
     }),    
     
-    antishogi: new Variant({
-        name: "antishogi", tooltip: () => _("Japanese Chess, and the standard 9x9 version played today with drops and promotions. "),
+    coffeeshogi: new Variant({
+        name: "coffeeshogi", tooltip: () => _("Japanese Chess, and the standard 9x9 version played today with drops and promotions. "),
         startFen: "lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL[-] w 0 1",
         board: "shogi9x9", piece: "shogi",
         firstColor: "Black", secondColor: "White",
@@ -423,8 +423,8 @@ export const VARIANTS: { [name: string]: Variant } = {
         chess960: true, icon: "♔", icon960: "♔",
     }),
     
-    antiminishogi: new Variant({
-        name: "antiminishogi", tooltip: () => _("Antichess + minishogi"),
+    coffeeminishogi: new Variant({
+        name: "coffeeminishogi", tooltip: () => _("Antichess + minishogi"),
         startFen: "rbsgk/4p/5/P4/KGSBR[-] w 0 1",
         board: "shogi5x5", piece: "shogi",
         firstColor: "Black", secondColor: "White",
@@ -850,9 +850,9 @@ const disabledVariants = [ "gothic", "gothhouse", "embassy" ];
 export const enabledVariants = variants.filter(v => !disabledVariants.includes(v));
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "antichess", "losers", "anti_antichess", "antiatomic", "antihouse", "antipawns", "coffeehouse", "coffeehill", "atomic_giveaway_hill", "coffee_3check", "coffeerace", "antishogi", "antiminishogi"] },
+    standard: { variants: [ "antichess", "losers", "anti_antichess", "antiatomic", "antihouse", "antipawns", "coffeehouse", "coffeehill", "atomic_giveaway_hill", "coffee_3check", "coffeerace"] },
     //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
-    //shogi:    { variants: [ "antishogi", "antiminishogi" ] },
+    shogi:    { variants: [ "coffeeshogi", "coffeeminishogi" ] },
     //xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "minixiangqi" ] },
     //fairy:    { variants: [ "capablanca", "capahouse", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel" ] },
     //army:     { variants: [ "orda", "synochess", "shinobi", "empire", "ordamirror" ] },
@@ -1178,8 +1178,8 @@ export function notation(variant: Variant): cg.Notation {
         case 'janggi':
             cgNotation = cg.Notation.JANGGI;
             break;
-        case 'shogi':
-        case 'minishogi':
+        case 'coffeeshogi':
+        case 'coffeeminishogi':
         case 'kyotoshogi':
         case 'dobutsu':
         case 'gorogoro':
