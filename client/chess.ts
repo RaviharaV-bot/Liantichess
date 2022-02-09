@@ -424,7 +424,7 @@ export const VARIANTS: { [name: string]: Variant } = {
     }),
     
     antimakruk: new Variant({
-        name: "antimakruk", tooltip: () => _("Thai Chess. A game closely resembling the original Chaturanga. Similar to Chess but with a different queen and bishop."),
+        name: "antimakruk", tooltip: () => _("Antichess + Makruk"),
         startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR w - - 0 1",
         board: "makruk8x8", piece: "makruk",
         pieceRoles: ["k", "s", "m", "n", "r", "p", "m~" as cg.PieceLetter],
