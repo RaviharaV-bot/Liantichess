@@ -65,7 +65,8 @@ VARIANTS = (
     "antiminishogi",
     "antihoppelpoppel",
     "atomic_giveaway_hill",
-    "atomic_giveaway_hill960"  
+    "atomic_giveaway_hill960"
+    "antimakruk"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
     # "gothic",
@@ -111,7 +112,8 @@ VARIANT_ICONS = {
     "antiplacement": "♔",
     "antihoppelpoppel": "♔",
     "atomic_giveaway_hill": "♔",
-    "atomic_giveaway_hill960": "♔",       
+    "atomic_giveaway_hill960": "♔",
+    "antimakruk": "Q",
     "capablanca": "P",
     "capahouse": "&",
     "seirawan": "L",
@@ -173,15 +175,16 @@ VARIANT_960_TO_PGN = {
     "makruk": "Makruk",
     "placement": "Placement",
     "grand": "Grand",
+    "antimakruk": "Antimakruk",
 }
 
 CATEGORIES = {
-    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "placement", "atomic", "atomic960", "antichess", "antichess960", "antiatomic", "antiatomic", "coffeehouse", "coffeehouse960", "antihoppelpoppel"),
-    "fairy": ("capablanca", "capablanca960", "capahouse", "capahouse960", "seirawan", "seirawan960", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel"),
-    "army": ("synochess", "shinobi", "empire", "chak"),
-    "makruk": ("makruk", "makpong", "cambodian", "sittuyin", "asean"),
-    "shogi": ("shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi", "antishogi", "antiminishogi"),
-    "xiangqi": ("xiangqi", "manchu", "janggi", "minixiangqi"),
+    "chess": ("antichess", "antichess960", "antiatomic", "antiatomic", "coffeehouse", "coffeehouse960", "antihoppelpoppel"),
+     #"fairy": ("capablanca", "capablanca960", "capahouse", "capahouse960", "seirawan", "seirawan960", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel"),
+     #"army": ("synochess", "shinobi", "empire", "chak"),
+    "makruk": ("antimakruk"),
+    "shogi": ("antishogi", "antiminishogi"),
+     #"xiangqi": ("xiangqi", "manchu", "janggi", "minixiangqi"),
 }
 
 VARIANT_GROUPS = {}
@@ -225,7 +228,10 @@ TROPHY_KIND = (
     "antiminishogi",
     "antihoppelpoppel",
     "atomic_giveaway_hill",
-    "atomic_giveaway_hill960"
+    "atomic_giveaway_hill960",
+    "antimakruk",
+    "antishogi",
+    "antiminishogi"
 )
 
 
