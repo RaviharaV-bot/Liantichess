@@ -65,7 +65,7 @@ VARIANTS = (
     "antiminishogi",
     "antihoppelpoppel",
     "atomic_giveaway_hill",
-    "atomic_giveaway_hill960"
+    "atomic_giveaway_hill960",
     "antimakruk"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
