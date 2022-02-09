@@ -25,7 +25,7 @@ V2C = {
     "coffee_3check": "X",
     "coffeerace": "N",   
     "anti_antichess": "V",
-    "makruk": "m",
+    "antimakruk": "m",
     "placement": "p",
     "seirawan": "s",
     "shogi": "g",
